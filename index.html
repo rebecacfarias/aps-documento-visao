@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento de Visão</title>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <header class="mb-3">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark  flex-md-nowrap p-4 shadow">
+            <a class="navbar-brand" href="#">MangaHolic Quadrinhos Orientais</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+                aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Índice
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#introducao">Introdução</a>
+                            <a class="dropdown-item" href="#posicionamento">Posicionamento</a>
+                            <a class="dropdown-item" href="#descricao">Descrição dos envolvidos e dos usuários</a>
+                            <a class="dropdown-item" href="#visao_geral">Visão Geral</a>
+                            <a class="dropdown-item" href="#interligacao">Interligação com outros sistemas</a>
+                            <a class="dropdown-item" href="#recursos">Recursos do Software</a>
+                            <a class="dropdown-item" href="#requisitos">Requisitos de Desenvolvimento</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="container-fluid pt-5">
+        <div class="row">
+            <nav class="col-md-3 d-none d-md-block  sidebar mt-3">
+                <div class="sidebar-sticky">
+      
+                  <h6 class="sidebar-heading d-flex justify-content-between  text-white align-items-center px-3 mt-4 mb-1">
+                    <span>Índice</span>
+                    
+                  </h6>
+                  <ul class="nav flex-column mb-2">
+                    <li class="nav-item">
+                      <a class="nav-link text-white" href="#introducao">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                        1.0 Introdução
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white" href="#posicionamento">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                        2.0 Posicionamento
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white" href="#descricao">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                        3.0 Descrição dos envolvidos <br> e dos usuários
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white" href="#visao_geral">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                        4.0 Visão Geral
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#interligacao">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                          5.0 Interligação com outros sistemas
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-white" href="#recursos">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                          6.0 Recursos do Software
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-white" href="#requisitos">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                          7.0 Requisitos de Desenvolvimento
+                        </a>
+                      </li>
+                  </ul>
+                </div>
+              </nav>
+
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-9 px-4 mt-5">
+                <h1>Documento de Visão</h1>
+                <h6 class="mx-2">Controle de coleção de quadrinhos orientais</h6>
+                <div class="container mt-5 mt-5">
+                    <div class="row">
+                        <div class="col-md">
+        
+                            <div class="topico" id="introducao">
+                                <h3>1.0 Introdução</h3>
+                                <div class="mx-2">
+                                    <h5>1.1 Objetivo</h5>
+                                    <p>
+                                        Este documento tem como objetivo introduzir e pontuar de forma geral a proposta do
+                                        projeto MangaHolic, que visa construir uma aplicação web e mobile para controle de
+                                        coleção
+                                        de
+                                        quadrinhos orientais.
+                                        Procura-se facilitar o entendimento do software, bem como sua finalidade e
+                                        funcionalidade,
+                                        através de uma visão
+                                        mais abrangente do projeto.
+                                    </p>
+                                </div>
+        
+                                <div class="mx-2">
+                                    <h5>1.2 Escopo</h5>
+                                    <p>
+                                        O projeto MangaHolic tem a finalidade de trazer uma solução prática para os
+                                        colecionadores
+                                        de
+                                        quadrinhos orientais,
+                                        possibilitanto não apenas o controle de suas coleções, mas também suprindo outras
+                                        necessidades
+                                        como evitar gastos
+                                        desnecessários com itens duplicados e possibilitar a manutenção da qualidade de suas
+                                        coleções,
+                                        além de trazer de forma
+                                        rápida e fácil informações sobre os títulos que faltam em sua coleção e onde
+                                        encontrá-los.
+                                        Neste documento são apresentados os requisitos necessários para que seja possível a
+                                        realização
+                                        do projeto.
+                                    </p>
+                                </div>
+        
+                                <div class="mx-2">
+                                    <h5>1.3 Visão geral</h5>
+                                    <p>
+                                        O documento está dividido em 7 partes:
+                                    </p>
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <span class="badge badge-light badge-pill">1</span>
+                                            <i> Introdução: </i> visão geral do documento e do projeto.
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="badge badge-light badge-pill">2</span>
+                                            <i> Posicionamento: </i> descrição do problema a ser resolvido, seu impacto e
+                                            oportunidade de negócio
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="badge badge-light badge-pill">3</span>
+                                            <i>Descrição dos envolvidos e dos usuários: </i> partes interessadas no projeto
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="badge badge-light badge-pill">4</span>
+                                            <i> Visão geral do produto: </i> descreve as funcionalidades e configurações gerais
+                                            do
+                                            produto
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="badge badge-light badge-pill">5</span>
+                                            <i> Interligação com outros sistemas: </i> pontua-se os sistemas externos utilizados
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="badge badge-light badge-pill">6</span>
+                                            <i> Recursos do Produto: </i> recursos a serem implementados
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="badge badge-light badge-pill">7</span>
+                                            <i> Requisitos de desenvolvimento: </i> condições para desenvolvimento do software
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div> <!-- FIM DA DIV DE INTRODUÇÃO -->
+        
+                            <div class="topico" id="posicionamento">
+                                <h3>2.0 Posicionamento</h3>
+        
+                                <div class="mx-2">
+                                    <h5>2.1 Oportunidade de Negócio</h5>
+                                    <p>
+                                        Os colecionadores são pessoas que preocupam-se com a organização e a manutenção de suas
+                                        coleções, procurando manter-se
+                                        a par de o quão longe está indo sua coleção, o que falta para completá-la, se existe
+                                        algum
+                                        item duplicado ou uma versão melhor,
+                                        sendo assim diversas informações necessárias para manter o controle e garantir uma boa
+                                        coleção.
+                                        Quando se trata de quadrinhos orientais a situação pode se tornar ainda mais detalhista,
+                                        uma
+                                        vez que os famosos mangás
+                                        podem vir em volumes diversos, tornando as coleções maiores ainda. Há também a questão
+                                        de
+                                        disponibilidade de compra, que
+                                        pode dificultar a situação do colecionador na hora de procurar os volumes que faltam, o
+                                        melhor preço, a melhor qualidade,
+                                        e ainda não correr o risco de comprar repetido.
+                                        É nesse cenário que surge o projeto MangaHolic, visando facilitar a vida dos
+                                        colecionadores
+                                        de quadrinhos orientais, trazendo
+                                        funcionalidades que tornem muito mais fácil e prática a vida do leitor de mangá.
+                                    </p>
+                                </div>
+        
+                                <div class="mx-2">
+                                    <h5>2.2 Descrição do problema </h5>
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">Problema</th>
+                                                <td>Falta de ferramentas que ajudem a controlar, organizar e completar coleções
+                                                    de
+                                                    quadrinhos orientais</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Público afetado</th>
+                                                <td>Leitores e colecionadores de Mangás e Manhwas</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Impacto</th>
+                                                <td>Desperdício de dinheiro com títulos repetidos, tempo gasto para organizar e
+                                                    pesquisar manualmente os títulos que faltam na coleção</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Solução</th>
+                                                <td>Aplicação que auxilia no controle das coleções de forma eficiente</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+        
+                                <div class="mx-2">
+                                    <h5>2.3 Posição do produto </h5>
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">Para</th>
+                                                <td>leitores de quadrinhos orientais</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Que</th>
+                                                <td>colecionam mangás e manhwas</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">O MangaHolic</th>
+                                                <td>é uma aplicação</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Que</th>
+                                                <td>gerencia as coleções de quadrinhos orientais através de funcionalidades
+                                                    práticas
+                                                    e eficientes, além de uma interface intuitiva</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Diferente de</th>
+                                                <td>controle manual de coleções e demais aplicações para leitores</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Nosso produto</th>
+                                                <td>é uma solução inovadora para os fãs da cultura japonesa, mantendo suas
+                                                    coleções
+                                                    bem gerenciadas</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+        
+                            </div> <!-- FIM DA DIV DE POSICIONAMENTO-->
+        
+                            <div class="topico" id="descricao">
+                                <h3>3.0 Descrição dos envolvidos e dos usuários</h3>
+                                <div class="mx-2 mt-5">
+                                    <h5>3.1 Envolvidos</h5>
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Nome</th>
+                                                <th scope="col">Descrição</th>
+                                                <th scope="col">Responsabilidades</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">Desenvolvedores</th>
+                                                <td>Estudante das disciplinas de Análise e Projeto de Sistemas, Engenharia(s)
+                                                    de Software(s) e Projeto de Interface Homem-computador</td>
+                                                <td>Planejar, documentar, desenvolver, implementar e testar o Software</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Gestores do projeto</th>
+                                                <td>Estudante das disciplinas de Análise e Projeto de Sistemas, Engenharia(s)
+                                                    de Software(s) e Projeto de Interface Homem-computador</td>
+                                                <td>Gerir o desenvolvimento e identificar problemas e suas respectivas soluções
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Cliente</th>
+                                                <td>Colecionador de mangás e manhwas</td>
+                                                <td>Explicar requisitos e validar aplicação</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Professores</th>
+                                                <td>Professores das disciplinas de Análise e Projeto de Sistemas, Engenharia(s)
+                                                    de Software(s) e Projeto de Interface Homem-computador na UEPB</td>
+                                                <td>Avaliar, auxiliar e acompanhar os estudantes nas disciplinas APS, ES e IHC
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="mx-2">
+                                    <h5>3.2 Usuários</h5>
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Nome</th>
+                                                <th scope="col">Descrição</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">Colecionador</th>
+                                                <td>Pessoa que coleciona quadrinhos orientais.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+        
+                                <div class="mx-2 mt-5">
+                                    <h5>3.3 Perfil dos Envolvidos</h5>
+                                    <div class="mx-2 m-4">
+                                        <h6>3.3.1 Equipe de desenvolvimento e gerenciamento</h6>
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">Representante</th>
+                                                    <td>Rebeca Cunha de Farias</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Descrição</th>
+                                                    <td>Desenvolvedora do projeto.</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Tipo</th>
+                                                    <td>Graduanda em Ciência da Computação na UEPB</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Responsabilidades</th>
+                                                    <td>Gestão, documentação, desenvolvimento, testes e implementação do
+                                                        software
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Critérios de sucesso</th>
+                                                    <td>Organizar o projeto e finalizar o desenvolvimento, entregar o software
+                                                        em
+                                                        tempo estipulado</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Envolvimento</th>
+                                                    <td>Alto</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="mx-2 m-4">
+                                        <h6>3.3.2 Cliente</h6>
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">Representante</th>
+                                                    <td>Daniel Scherer</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Descrição</th>
+                                                    <td>Professor de APS e IHC na UEPB</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Tipo</th>
+                                                    <td>Representante do cliente interessado no desenvolvimento do projeto</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Responsabilidades</th>
+                                                    <td>Estabelecer os requisitos e validar o software</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Critérios de sucesso</th>
+                                                    <td>Explicar claramente os requisitos e funcionalidades esperadas</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Envolvimento</th>
+                                                    <td>Alto</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+        
+                                <div class="mx-2 mt-5">
+                                    <h5>3.3 Perfil dos Usuários</h5>
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">Representante</th>
+                                                <td>Colecionadores de mangás e manhwas</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Descrição</th>
+                                                <td>Pessoa leitora de quadrinhos orientais</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Tipo</th>
+                                                <td>Usuário que tem interesse em gerenciar coleções de quadrinhos</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Critérios de sucesso</th>
+                                                <td>Gerenciar coleções de forma prática e eficaz</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Envolvimento</th>
+                                                <td>Alto</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!--FIM DA DIV DE DESCRIÇÃO DE ENVOLVIDOS E USUÁRIOS-->
+        
+                            <div class="topico" id="visao_geral">
+                                <h3>4.0 Visão Geral</h3>
+                                <div class="mx-2">
+                                    <p>
+                                        O MangaHolic irá oferecer uma alternativa para os fãs de quadrinhos orientais poderem
+                                        gerenciar suas leituras,
+                                        seja ampliando, concluindo ou criando novas coleções. A aplicação irá permitir que o
+                                        usuário
+                                        cadastre coleções já existentes,
+                                        descubra se há algum título repetido, mantenha o controle da qualidade de seus volumes,
+                                        receba sugestões de compra para completar alguma coleção ou iniciar
+                                        novas coleções, saber se já finalizou uma coleção ou quantos volumes faltam para tal, e,
+                                        por
+                                        fim, ter auxílio necessário para
+                                        manter-se em dia com os seus quadrinhos.
+                                    </p>
+                                </div>
+        
+                            </div>
+        
+                            <div class="topico" id="interligacao">
+                                <h3>5.0 Interligação com outros sistemas</h3>
+                                <div class="mx-2">
+                                    <p>
+                                        Será utilizada uma API para busca e sugestão de quadrinhos para o usuário. A API será
+                                        desenvolvida
+                                        pela equipe e utilizará os websites de venda de quadrinhos mais recomendados para obter
+                                        o
+                                        resultado das sugestões.
+                                    </p>
+                                </div>
+        
+                            </div>
+        
+                            <div class="topico" id="recursos">
+                                <h3>6.0 Recursos do Software</h3>
+                                <div class="mx-2">
+                                    <p>
+                                        O software irá oferecer as seguintes funcionalidades:
+                                    </p>
+                                    <ul class="list-group">
+        
+                                        <li class="list-group-item">
+                                            <span class="badge badge-light badge-pill">1</span>
+                                            Cadastrar quadrinhos já comprados(nome, autor, gênero, preço,
+                                            volume, encadernação, coleção)
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="badge badge-light badge-pill">2</span>
+                                            Dividir quadrinhos em coleções
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="badge badge-light badge-pill">3</span>
+                                            Atualizar de status das coleções: finalizada, em aberto,
+                                            desistiu
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="badge badge-light badge-pill">4</span>
+                                            Saber se possui itens duplicados
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="badge badge-light badge-pill">5</span>
+                                            Receber sugestão de compra baseada em coleções cadastradas
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="badge badge-light badge-pill">6</span>
+                                            Saber quantos volumes faltam nas coleções incompletas
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="badge badge-light badge-pill">7</span>
+                                            Gerar coleções automaticamente(baseando-se em autor, editora,
+                                            ano, gênero)
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="badge badge-light badge-pill">8</span>
+                                            Manter controle do estado de conservação dos quadrinhos
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="badge badge-light badge-pill">9</span>
+                                            Avaliar quadrinhos e coleções
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="badge badge-light badge-pill">10</span>
+                                            Compatibilidade com Windows e Android
+                                        </li>
+                                    </ul>
+                                </div>
+        
+                            </div>
+                            <!--FIM DA DIV DE RECURSOS-->
+        
+                            <div class="topico" id="requisitos">
+                                <h3>7.0 Requisitos</h3>
+                                <div class="mx-2">
+                                    <h6>7.1 Requisitos de sistema</h6>
+                                    <ul>
+                                        <li>
+                                            Compatível com sistemas operacionais Windows e Android
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="mx-2">
+                                    <h6>7.2 Requisitos de design e usabilidade</h6>
+                                    <ul>
+                                        <li>
+                                            O design terá como base as indicações feitas pelo usuário de modo a prover uma
+                                            interface intuitiva e agradável.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="mx-2">
+                                    <h6>7.3 Requisitos de Implementação</h6>
+                                    <ul>
+                                        <li>
+                                            Python, Django e Djang Rest Framework
+                                        </li>
+                                        <li>
+                                            React e React Native
+                                        </li>
+                                        <li>
+                                            Android Studio
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="mx-2">
+                                    <h6>7.4 Requisitos de segurança</h6>
+                                    <ul>
+                                        <li>
+                                            Autenticação e validação de usuário
+                                        </li>
+                                    </ul>
+                                </div>
+        
+                            </div>
+        
+                        </div><!-- FIM DA DIV-COL DE CONTEÚDO -->
+                    </div>
+                </div>
+
+            </main>
+
+            
+
+        </div> <!--FIM DA ROW PRINCIPAL-->
+    </div>
+    <footer class="pt-4  border-top bg-light">
+        <div class="row">
+          <div class="col-12 col-md">
+            <small class="d-block mb-3 text-muted">© 2021</small>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Descrição</h5>
+            <p>Documento de visão para o projeto de controle de coleção de quadrinhos orientais</p>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Aluna</h5>
+            <p>Rebeca Cunha de Farias</p>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Disciplina</h5>
+            <p>Análise e projeto de sistemas, professor Daniel Scherer, 2020.2</p>
+          </div>
+        </div>
+      </footer>
+
+</body>
+
+</html>
